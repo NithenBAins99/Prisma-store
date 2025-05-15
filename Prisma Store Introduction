@@ -1,0 +1,51 @@
+# PrismaStore
+
+**PrismaStore** is a open-source full-stack next js web application that functions like a  Google Play Store or App Store. It allows users to browse, search, and download apps, while developers can submit and publish their apps after verification.
+---
+We divide this app in 3 parts
+1> User
+2> Developer 
+3> Admin
+
+## Features
+
+### For Users
+- User authentication (signup/login)
+- Browse and search apps by category, rating, price
+- Rate and review apps
+- Track downloads and payment history
+- Personal library of installed apps
+- User profile dashboard
+
+### For Developers
+- Developer authentication with enhanced verification
+- Submit app details including APK + OBB files (no ZIP files)
+- Upload app screenshots and documentation
+- AI malware scanning simulation on submitted apps
+- App approval workflow (Pending → Verified → Published)
+- Developer dashboard to track apps and revenue
+
+### Admin 
+- Manage users and developers
+- Approve or reject app submissions
+- Moderate reviews and content
+
+---
+
+## Tech Stack
+
+| Layer           | Technology                          |
+|-----------------|-----------------------------------|
+| Frontend        | Next.js, Tailwind CSS , Shadcn UI      |
+| Backend         | Next.js              |
+| Database        | MongoDB, Mongoose                 |
+| Authentication  | Next-auth                        |
+| File Upload     | Multer, Firebase Storage  |
+| Payment Gateway | Stripe or Razorpay                |
+| AI Scanner      | malware scan service    |
+| Deployment      | Vercel , MongoDB Atlas |
+
+---
+
+
+
