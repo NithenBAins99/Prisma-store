@@ -1,0 +1,181 @@
+🔥 PrismaStore: Complete Development Checklist
+
+1️⃣ Planning & Design
+Define User Roles & Permissions
+
+User
+Developer
+Admin (for approvals, moderation)
+
+[Wireframe / UI Design]
+
+User app browsing, profile, library pages
+Developer app submission, dashboard pages
+Admin panel (optional)
+
+Define Database Schema
+Users, Developers, Apps, Reviews, Downloads, Payments
+
+API Design (REST or GraphQL endpoints)
+
+Authentication (login/signup)
+
+App CRUD
+
+Review & rating
+
+Payment processing
+
+File uploads
+
+2️⃣ Frontend
+Framework: Next.js (React-based, SSR + SSG)
+
+UI Framework: Tailwind CSS (fast styling)
+
+Pages to create:
+
+Authentication pages (login, signup)
+
+Home (app listing with search/filter)
+
+App details (description, reviews, download button)
+
+User profile & library
+
+Developer dashboard (upload app, track status)
+
+Payment pages (checkout, success/failure)
+
+Admin panel (optional)
+
+Features:
+
+Search + filter apps
+
+Pagination/infinite scroll
+
+Responsive design (mobile + desktop)
+
+Notifications (toast messages)
+
+3️⃣ Backend
+Node.js + Express server
+
+Authentication & Authorization
+
+JWT for token management
+
+Password hashing (bcrypt)
+
+Role-based middleware (user, developer, admin)
+
+Database: MongoDB + Mongoose
+
+Models:
+
+User (common profile info, role)
+
+Developer (KYC details, status)
+
+App (metadata, file URLs, status)
+
+Review (userId, appId, rating, comment)
+
+Download (userId, appId, timestamp)
+
+Payment (userId, appId, payment status)
+
+File Upload
+
+Multer (handle file uploads)
+
+Cloud storage (Firebase, S3, or Cloudinary) for storing APK, OBB, images
+
+Payment Gateway Integration
+
+Stripe or Razorpay for paid apps
+
+AI Malware Scanner (Simulated)
+
+A service/API that “scans” uploaded files before approval
+
+Could be a dummy function or connect to real malware scanning API
+
+Admin Panel APIs
+
+Approve/reject developer apps
+
+Manage users, apps, reviews
+
+4️⃣ Security
+Validate uploaded files (file type, size, extension)
+
+Rate limiting to avoid brute force attacks
+
+Secure HTTP headers (Helmet)
+
+Input validation (Joi or express-validator)
+
+HTTPS setup for production
+
+Sanitize user inputs (prevent XSS/SQL injection)
+
+5️⃣ DevOps / Deployment
+Version control: Git + GitHub
+
+Deployment platform:
+
+Frontend: Vercel / Netlify
+
+Backend: Heroku / Render / DigitalOcean
+
+Database: MongoDB Atlas (cloud-hosted MongoDB)
+
+Environment variables management (.env files)
+
+CI/CD pipeline (optional)
+
+6️⃣ Optional Advanced Features
+Push notifications for updates
+
+Real-time chat support (WebSockets)
+
+Analytics dashboard for downloads, revenue
+
+Email notifications (Nodemailer or SendGrid)
+
+Multi-language support
+
+7️⃣ Tools & Resources
+Purpose	Tools / Libraries
+Frontend Framework	Next.js, React, Tailwind CSS
+Backend Framework	Node.js, Express
+Database	MongoDB, Mongoose
+File Upload	Multer, Firebase Storage, AWS S3, Cloudinary
+Authentication	JWT, bcrypt
+Payment	Stripe API, Razorpay
+Validation	Joi, express-validator
+Security	Helmet, rate-limiter
+Malware Scan	VirusTotal API (optional) or custom simulation
+Deployment	Vercel, Heroku, MongoDB Atlas
+Version Control	Git, GitHub
+
+8️⃣ High-Level Timeline Suggestion
+Phase	Tasks	Duration
+Planning	Design, wireframes, schema design	1 week
+Backend Setup	Auth, DB models, APIs, file uploads	2-3 weeks
+Frontend Setup	UI pages, routing, form handling	2-3 weeks
+Integration	Connect frontend + backend, payment integration	1-2 weeks
+AI Scanner	Build or simulate malware scan	1 week
+Testing & Debugging	Unit tests, manual testing	1 week
+Deployment	Deploy frontend, backend, database	Few days
+Polish & Extras	Add notifications, profile enhancements, etc.	Ongoing
+
+🔑 Summary
+Start with basic auth and app listing
+Add developer upload and approval system
+Implement file upload + storage
+Add payment system
+Integrate AI malware scanning (simulated)
+Deploy and test on real environment
